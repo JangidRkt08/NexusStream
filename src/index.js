@@ -19,6 +19,9 @@ connectDB()
   console.log("MONGO db connection failed !!! ", err);
 });
 
+
+
+// ############## other Approach ################
 /*  
 import express from "express";
 const app = express();

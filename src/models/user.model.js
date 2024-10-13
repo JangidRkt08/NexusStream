@@ -62,6 +62,7 @@ userSchema.methods.isPasswordCorrect = async function (password) {
   return await bcrypt.compare(password, this.password);
 };
 
+// VALIDATE: access token generally expires in short duration-> when needed upload if authenticated
 userSchema.methods.generateAccessToken = function () {
   return jwt.sign(
     {
